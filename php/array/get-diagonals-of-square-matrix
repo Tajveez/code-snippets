@@ -1,0 +1,13 @@
+function getDiagonal($arr, $direction, $isSum = false) {
+    $i = 0;
+    $diagonal = [];
+    $arrCount = count($arr);
+    $indexCount = $arrCount - 1;
+    while($i < $arrCount) {
+        $j = ($direction == 'left') ? $i : ($indexCount - $i);
+        $diagonal[] = $arr[$i][$j];
+        $i++;
+    }
+    
+    return ($isSum) ? array_sum($diagonal) : $diagonal;
+}
