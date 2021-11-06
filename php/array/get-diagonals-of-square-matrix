@@ -11,3 +11,6 @@ function getDiagonal($arr, $direction, $isSum = false) {
     
     return ($isSum) ? array_sum($diagonal) : $diagonal;
 }
+
+// how to use function
+getDiagonal($yourArray, 'left');
