@@ -5,3 +5,5 @@ function staircase($n) {
         print(str_repeat($space, $n - $i).str_repeat($stair, $i)."\n");
     }
 }
+
+staircase(5);
