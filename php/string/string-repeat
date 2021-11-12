@@ -6,4 +6,5 @@ function staircase($n) {
     }
 }
 
+// using the method
 staircase(5);
